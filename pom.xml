@@ -3,25 +3,15 @@
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>ca.rbon</groupId>
-    <artifactId>iostream</artifactId>
+    <artifactId>shmokey</artifactId>
     <version>0.10.4-SNAPSHOT</version>
 
     <name>${project.groupId}:${project.artifactId}</name>
-    <description>Better ergonomics for Java IO stream handling</description>
-    <url>https://github.com/fralalonde/iostream</url>
-
-    <licenses>
-        <license>
-            <name>Mozilla Public License Version 2.0</name>
-            <url>http://mozilla.org/MPL/2.0/</url>
-        </license>
-    </licenses>
 
     <developers>
         <developer>
             <name>Francis Lalonde</name>
             <email>fralalonde@gmail.com</email>
-            <organization>ca.rbon</organization>
             <organizationUrl>https://github.com/fralalonde</organizationUrl>
         </developer>
     </developers>
@@ -35,12 +25,11 @@
 
     <organization>
         <name>ca.rbon</name>
-        <url>https://rbon.ca/</url>
     </organization>
 
     <properties>
         <!-- this project uses default methods -->
-        <java.version>10</java.version>
+        <java.version>11</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
@@ -87,6 +76,12 @@
             <artifactId>guava</artifactId>
             <version>28.0-jre</version>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>28.1-jre</version>
+            <scope>compile</scope>
         </dependency>
 
     </dependencies>
